@@ -1,0 +1,15 @@
+{
+  "name": "component-generator",
+  "version": "1.0.0",
+  "description": "Command to generate a fore component",
+  "main": "./lib/generator.js",
+  "bin": {
+    "fr-gen": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ForeC",
+  "license": "ISC",
+  "dependencies": {}
+}

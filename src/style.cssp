@@ -1,0 +1,11 @@
+body {
+  h1 {
+    color: blue;
+  }
+  div {
+    background-color: white;
+  }
+  .hey{
+    color:red;
+  }
+}

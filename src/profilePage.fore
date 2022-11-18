@@ -1,0 +1,36 @@
+import Fore from "../fore/core";
+
+const myState = {
+  user: {
+    id: 0,
+  },
+  age: 18,
+};
+
+const fetchData = function () {
+  fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then((response) => response.json())
+    .then((json) => {
+      this.data.user.id += json.userId;
+      this.data.age += 3;
+    });
+};
+
+<element>
+  <main>
+    <h2 class="hey">
+      he is oussema {this.props.name} and he is
+      {this.data.user.id} years old
+    </h2>
+    <button on:click={fetchData} on:hover={fetchData}>
+      Fetch
+    </button>
+    <h1>hey {this.data.age}</h1>
+  </main>
+</element>;
+
+export default {
+  name: "Profile",
+  data: myState,
+  mounted: function () {},
+};

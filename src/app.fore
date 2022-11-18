@@ -1,0 +1,31 @@
+import Fore from "../fore/core";
+import "./style.css";
+
+function add() {
+  this.data.counter++;
+}
+
+<element>
+  <div>
+    <h1>Hello Counter</h1>
+    <h2 id="p1">
+      {this.data.counter > 2 ? "hey" : "bye"} w {this.data.counter}
+    </h2>
+    <button on:click={add}>Add</button>
+  </div>
+</element>;
+
+export default {
+  name: "App",
+  data: {
+    counter: 0,
+  },
+  mounted: function () {
+    /* fetch("https://jsonplaceholder.typicode.com/todos/1")
+      .then((response) => response.json())
+      .then((json) => {
+        this.data.counter += json.userId;
+        console.log("json.userId");
+      }); */
+  },
+};
